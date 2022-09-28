@@ -1,5 +1,5 @@
 #!/bin/bash
-Platforms=('android-arm64' 'linux-arm64' 'win-x64' 'linux-x64' 'osx-x64')
+Platforms=('linux-arm64' 'osx-arm64')
 
 if ! [ -d './TempFiles' ];
 then
@@ -10,7 +10,7 @@ rm -rf ./TempFiles/*
 
 for platform in "${Platforms[@]}"
 do
-    dotnet publish -r "$platform" -c Release -p:PublishSingleFile=true -p:PublishTrimmed=true -p:UseAppHost=true --self-contained true || exit 1
+    dotnet publish -r "$platform" -c Release -p:PublishSingleFile=true -p:PublishTrimmed=true -p:UseAppHost=true --self-contained true -o arm64 || exit 1
 
     cd ./bin/Release/net6.0/"$platform"/publish/ || exit 1
     zip -r ./ZonyLrcTools_"$platform"_"${PUBLISH_VERSION}".zip ./ || exit 1
