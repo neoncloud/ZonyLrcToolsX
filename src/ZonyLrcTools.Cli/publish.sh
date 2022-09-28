@@ -1,5 +1,5 @@
 #!/bin/bash
-Platforms=('win-x64' 'linux-x64' 'osx-x64' 'linux-arm64' 'android.21-arm64')
+Platforms=('android-arm64' 'linux-arm64' 'win-x64' 'linux-x64' 'osx-x64')
 
 if ! [ -d './TempFiles' ];
 then
