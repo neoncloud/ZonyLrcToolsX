@@ -25,7 +25,7 @@
         <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
         <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
         <PackageReference Include="TagLibSharp" Version="2.3.0" />
-        <PackageReference Include="runtime.linux-arm64.Microsoft.NETCore.App" Version="6.0.9" />
+        <PackageReference Include="Microsoft.NETCore.App.Runtime.linux-arm64" Version="6.0.9" />
         <PackageReference Include="runtime.linux-arm64.Microsoft.NETCore.DotNetAppHost" Version="3.1.25" />
         <PackageReference Include="runtime.linux-arm64.Microsoft.NETCore.DotNetHostResolver" Version="6.0.9" />
         <PackageReference Include="runtime.linux-arm64.Microsoft.NETCore.DotNetHostPolicy" Version="6.0.9" />
