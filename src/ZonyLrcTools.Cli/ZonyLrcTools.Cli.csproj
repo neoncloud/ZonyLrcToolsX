@@ -7,7 +7,7 @@
         <FileVersion>0.0.0.1</FileVersion>
         <PackageVersion>0.0.0.1</PackageVersion>
         <Version>0.0.0.1</Version>
-        <UseAppHost>true</UseAppHost>
+        <PublishSingleFile>false</PublishSingleFile>
     </PropertyGroup>
 
     <ItemGroup>
